@@ -8,6 +8,7 @@
     <meta name="author" content="Maverick Blancaver">
     <link rel="stylesheet" href="styles/base.css">
     <script src="/scripts/getdates.js" defer></script>
+
 </head>
 <body>
     <header>
@@ -51,5 +52,9 @@
         <p>&copy; <span id="currentyear"></span> Maverick Blancaver. Philippines.</p>
         <p id="lastModified"></p>
     </footer>
+    <script>
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = 'Last Modified: ' + document.lastModified;
+    </script>
 </body>
 </html>
