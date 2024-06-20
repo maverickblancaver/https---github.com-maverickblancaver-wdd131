@@ -1,0 +1,112 @@
+/* Base styles (import and reset styles) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+/* Header styles */
+header {
+    background-color: #061c49;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+/* Navigation styles */
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+nav a:hover {
+    background-color: #061c49;
+}
+/* Main content styles */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+section.card {
+    background-color: white;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+section.card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+section.card h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Center the heading */
+section.card h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center; 
+}
+
+/* Flexbox for image and text side by side */
+.card-content {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.card-content img {
+    width: 150px; /* Adjust as necessary */
+    height: auto;
+    border-radius: 5px;
+}
+.card-content .text-content {
+    flex: 1;
+}
+/* Footer styles */
+footer {
+    background-color: #061c49;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+footer p {
+    margin: 0.5rem 0;
+}
+/* CSS Grid for main content sections */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
