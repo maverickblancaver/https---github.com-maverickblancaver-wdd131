@@ -75,16 +75,18 @@ section.card h2 {
     text-align: center; 
 }
 
-/* Flexbox for image and text side by side */
+/* Flexbox for image and text side by side 
 .card-content {
     display: flex;
     gap: 1rem;
-    align-items: center;
-}
+    align-items: center; 
+} */
 .card-content img {
     width: 150px; /* Adjust as necessary */
     height: auto;
     border-radius: 5px;
+    display: block;
+    margin: 0 auto;
 }
 .card-content .text-content {
     flex: 1;
