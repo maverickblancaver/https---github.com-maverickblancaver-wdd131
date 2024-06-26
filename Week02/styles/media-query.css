@@ -1,0 +1,27 @@
+/* Apply the Google Font 'Roboto' to the body */
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Common styles for header, main, and footer */
+  header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid #bbb;
+    padding: 1rem;
+    background-color: #e6f2ff; /* Blueish background color */
+  }
+  
+  /* Styles for the main element */
+  main {
+    display: grid;
+    grid-template-columns: 1fr; /* One column grid */
+    gap: 1rem; /* Even gap of 1rem */
+  }
+  
+  /* Styles for the section elements */
+  section {
+    padding: 1rem;
+    background-color: #fff; /* Lighter or white background */
+  }
+  
