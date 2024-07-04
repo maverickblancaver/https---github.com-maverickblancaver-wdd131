@@ -1,0 +1,26 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    flex-direction: row;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+.gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer {
+    position: static;
+}
