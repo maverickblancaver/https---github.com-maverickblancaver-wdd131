@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const currentYear = new Date().getFullYear();
     document.getElementById('currentYear').textContent = currentYear;
   
-    // Set last modified date in footer (change this to actual modification date)
-    const lastModifiedDate = new Date('2024-07-10'); // Replace with actual date
-    document.getElementById('lastModified').textContent = lastModifiedDate.toDateString();
+    // Set last modified date in footer (current date and time)
+    const lastModifiedDate = new Date(); // Current date and time
+    document.getElementById('lastModified').textContent = lastModifiedDate.toDateString() + ' ' + lastModifiedDate.toLocaleTimeString();
   
     // Static values for weather details (replace with actual values if available)
     const currentTempCelsius = 30; // Example temperature in Celsius
@@ -37,5 +37,4 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('windSpeed').textContent = `${windSpeedKmh} km/h`;
     const windChill = calculateWindChill(currentTempCelsius, windSpeedKmh, 'metric');
     document.getElementById('windChill').textContent = windChill;
-  });
-  
+});
