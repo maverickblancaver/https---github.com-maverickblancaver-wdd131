@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Places Information - Philippines</title>
+  <link rel="stylesheet" href="styles/places.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Welcome to Philippines Information</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#weather">Weather</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="left" id="about">
+      <h2>About the Philippines</h2>
+      <p>The Philippines is an archipelago in Southeast Asia, comprising over 7,000 islands. It is known for its vibrant culture, rich history, and stunning natural landscapes.</p>
+      <p>Explore the diverse regions, from bustling urban centers like Manila to serene tropical beaches in Boracay and Palawan.</p>
+    </div>
+    <div class="right" id="weather">
+      <header>
+        <h2>Weather Details</h2>
+        <!-- Weather icon for wider view -->
+        <div class="weather-icon">
+          ⛅ <!-- Emoticon or equivalent for weather icon -->
+        </div>
+      </header>
+
+      <main class="main">
+        <!-- Hero section with responsive image -->
+        <section class="hero">
+          <img srcset="images/philippines-beach-small.webp 500w,
+                       images/philippines-beach-medium.webp 1000w,
+                       images/philippines-beach-large.webp 2000w"
+               sizes="(max-width: 500px) 500px,
+                      (max-width: 1000px) 1000px,
+                      2000px"
+               src="images/vigan.webp"
+               alt="">
+        </section>
+
+        <!-- Weather details section -->
+        <section class="weather-details">
+          <!-- Weather icon for mobile view using SVG -->
+          <img src="images/weather-icon.svg" alt="Weather Icon" class="weather-icon-mobile">
+          <p>Current Temperature: <span id="currentTemp">30°C</span></p>
+          <p>Wind Speed: <span id="windSpeed">10 km/h</span></p>
+          <p>Wind Chill Factor: <span id="windChill">N/A</span></p>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> Places Information - Philippines. Last modified: <span id="lastModified"></span></p>
+    <script src="scripts/places.js" defer></script>
+  </footer>
+</body>
+</html>
