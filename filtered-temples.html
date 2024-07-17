@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temples</title>
+    <link rel="stylesheet" href="filtered-temples.css">
+    <link rel="stylesheet" href="filtered-temples-large.css" media="screen and (min-width: 600px)">
+    <script defer src="filtered-temples.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Temples</h1>
+        <nav>
+            <button id="menu-button" aria-label="Toggle navigation">☰</button>
+            <ul id="menu">
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="old">Old</a></li>
+                <li><a href="#" id="new">New</a></li>
+                <li><a href="#" id="large">Large</a></li>
+                <li><a href="#" id="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Home</h2>
+        <div class="gallery" id="temple-gallery"></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Temples. All rights reserved.</p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+</html>
