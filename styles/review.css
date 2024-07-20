@@ -1,0 +1,49 @@
+/* Basic reset for margin and padding */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set font and background color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #0066cc;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Main content styling */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Footer styling */
+footer {
+    background-color: #0066cc;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Paragraph styling */
+p {
+    margin: 1em 0;
+    font-size: 1.1em;
+}
