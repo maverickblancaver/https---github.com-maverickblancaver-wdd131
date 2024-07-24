@@ -1,0 +1,33 @@
+/* large.css for mobile view */
+
+/* For portrait and landscape views on mobile */
+nav ul li {
+    display: block;
+    margin: 10px 0;
+}
+
+header, footer {
+    text-align: center;
+}
+
+main {
+    padding: 10px;
+}
+
+form {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+form label, form input, form textarea, form button {
+    width: 100%;
+}
+
+/* For landscape view on mobile */
+@media (orientation: landscape) {
+    nav ul li {
+        display: inline;
+        margin: 10px;
+    }
+}
